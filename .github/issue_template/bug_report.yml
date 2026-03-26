@@ -1,0 +1,80 @@
+name: "Report a bug 🐞"
+description: Create a new Bug
+title: "[BUG] - <title>"
+labels: [
+  "bug"
+]
+body:
+  - type: textarea
+    id: bug-description
+    attributes:
+      label: "About Bug"
+      description: Tell us more about the bug
+      placeholder: "Write about the bug in detail, about what was observed and how to reproduce it"
+    validations:
+      required: true
+  - type: textarea
+    id: user-agent
+    attributes:
+      label: "User agent"
+      description: Captures the OS-browser user agent details 
+      placeholder: "Captures the details of the browser and OS from which the bug has been reported"
+    validations:
+      required: false
+  - type: textarea
+    id: image-proxy
+    attributes:
+      label: "Image proxy"
+      description: The details about the cluster image proxy which was accessed while the bug occured
+      placeholder: "#Image proxy"
+    validations:
+      required: false
+  - type: textarea
+    id: environment
+    attributes:
+      label: "Environment"
+      description: The konflux environment in which the issue was observed
+      placeholder: A few specific words would be enough.
+    validations:
+      required: false
+  - type: textarea
+    id: cluster-version
+    attributes:
+      label: "Cluster version"
+      description: The cluster version in which the issue was observed
+      placeholder: A few specific words would be enough.
+    validations:
+      required: false
+  - type: textarea
+    id: konflux-version
+    attributes:
+      label: "Konflux version"
+      description: The Konflux version in which the issue was observed
+      placeholder: A few specific words would be enough.
+    validations:
+      required: false
+  - type: textarea
+    id: kubernetes-version
+    attributes:
+      label: "Kubernetes version"
+      description: The Kubernetes version in which the issue was observed
+      placeholder: A few specific words would be enough.
+    validations:
+      required: false
+  - type: textarea
+    id: openshift-version
+    attributes:
+      label: "OpenShift version"
+      description: The OpenShift version in which the issue was observed (if applicable)
+      placeholder: A few specific words would be enough.
+    validations:
+      required: false
+  - type: textarea
+    id: additional-info
+    attributes:
+      label: "Any additional info"
+      description: Do you have any additional ino you would like to share ?
+      placeholder: Additional info about the unresolved issue.
+    validations:
+      required: false
+
